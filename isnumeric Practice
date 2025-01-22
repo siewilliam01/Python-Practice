@@ -1,12 +1,26 @@
+def read_input():
+    x = input("Enter number > ")
+
 def is_number(string):
     return string.isnumeric()
-def main():
-    x = input('Enter number > ')
+
+def using_if():
     if (is_number(x) == True):
         x = int(x)
         y = x/3
         print(y)
     else:
+        print("not a number")
+
+def using_try():        
+    try:
+        x = int(x)
+    except:
         print('not a number')
+    else:
+        y = x/3
+        print(y)
 while True:
-    main()
+    read_input()
+    #using_if()
+    using_try()
