@@ -1,0 +1,9 @@
+def main():
+    print("Starting The Code Challenge")
+
+    x= input('Enter Your Code Here:')
+    print("You said", "'",x,"'")
+    print("Restarting The Code Challenge")
+
+while True:
+    main()
