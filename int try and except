@@ -1,0 +1,8 @@
+while True:
+    x = input("enter here >>> ")
+    try:
+        x = int(x)
+    except:
+        print("'",x,"'","is not a number")
+    else:
+        print("'",x,"'","is a number")
