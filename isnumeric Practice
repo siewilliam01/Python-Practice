@@ -1,5 +1,3 @@
-x = 0
-
 def read_input():
     global x
     x = input("Enter number > ")
