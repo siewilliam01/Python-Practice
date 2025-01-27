@@ -1,5 +1,6 @@
 import time
 
+x = 0
 
 my_list_one = []
 
