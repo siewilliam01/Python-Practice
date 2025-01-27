@@ -1,20 +1,26 @@
+x = 0
+
 def read_input():
+    global x
     x = input("Enter number > ")
 
 def is_number(string):
+    global x
     return string.isnumeric()
 
 def using_if():
+    global x
     if (is_number(x) == True):
-        x = int(x)
+        x = float(x)
         y = x/3
         print(y)
     else:
         print("not a number")
 
-def using_try():        
+def using_try():
+    global x
     try:
-        x = int(x)
+        x = float(x)
     except:
         print('not a number')
     else:
