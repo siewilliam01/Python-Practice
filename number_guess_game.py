@@ -1,11 +1,11 @@
 import random
 
 def main():
-    random_number = random.randint(0, 9)
+    random_number = random.randint(0, 100)
     win = False
     count = 1
     while(win == False):
-        user_number = input("Guess my number from 0-9 >>> ")
+        user_number = input("Guess my number from 0-100 >>> ")
         try:
             user_number = int(user_number)
         except:
