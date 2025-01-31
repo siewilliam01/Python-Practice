@@ -1,8 +1,9 @@
 import random
 
-print("Annoying(and maybe not techincally solvable idk i haven't checked) math game! Fill in the blanks! All are single digit.")
+print("Annoying(and maybe not techincally solvable idk i haven't checked) math game! Fill in the blanks! All are single digit. They are in order.")
 
 while True:
+    print("")
     win = False
     count = 1
     list_one = []
@@ -11,7 +12,7 @@ while True:
     for i in range(10):
         list_one.append(random.randint(0, 9))
     list_one.sort()
-    print(list_one)
+#    print(list_one)
     for i in range(5):
         list_two.append(list_one[2*i])
         list_two.append('_')
