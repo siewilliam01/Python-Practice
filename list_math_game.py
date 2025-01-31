@@ -25,7 +25,11 @@ while True:
         try:
             x = int(x)
         except:
-            print(x, "is not a valid input, try again.")
+            if(x == "igiveup"):
+                print("The answer was", y)
+                win = True
+            else:
+                print(x, "is not a valid input, try again.")
         else:
             if(x == y):
                 print("Nice! You won in ", count, "tries. New game!")
